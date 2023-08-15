@@ -1,6 +1,8 @@
 body {
+  display: flex;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   min-height: 100%;
   flex-direction: column;
   font-weight: 400;
@@ -8,4 +10,13 @@ body {
   line-height: 18px;
   font-family: "Lato", sans-serif;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    max-width: 1440px;
+  }
 }
