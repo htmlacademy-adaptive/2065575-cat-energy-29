@@ -1,15 +1,68 @@
 .example {
   margin-top: 49px;
   background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70%, #eaeaea 100%);
+    border-top: 2px solid #eaeaea;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    background-image: linear-gradient(to top, #eaeaea 70%, #ffffff 70%, #ffffff 100%,);
+    border-top: none;
+  }
 }
 
 .example__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 25px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.example__title {
+  grid-column: 1 / 4;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1 / 1;
+  }
 }
 
 .example__text {
   margin: 0;
   margin-top: 40px;
+  grid-column: 1 / 4;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 432px;
+    margin-top: 146px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__list {
@@ -58,4 +111,52 @@
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.example__slider-container {
+  position: relative;
+}
+
+.example__slider-container-images {
+  position: absolute;
+  width: 155px;
+  overflow: hidden;
+  left: 55%;
+  transform: translate(-104%, 5%);
+}
+
+.example__slider-container-images-left {
+  position: relative;
+  width: 155px;
+  overflow: hidden;
+  left: 55%;
+  transform: translate(-104%, 5%);
+}
+
+.example__slider-images {
+  position: absolute;
+  top: 101%;
+  left: 55%;
+  transform: translate(-50%, -97%);
+}
+
+.example__slider-toggle-button {
+  position: relative;
+  width: 4px;
+  height: 256px;
+  top: 24%;
+  left: 53%;
+  background-color: #666666;
+  border: none;
+}
+
+.example__slider-button {
+  border: 2px solid #666666;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-45%, -50%);
+  background-color: #ffffff;
 }
