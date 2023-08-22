@@ -1,37 +1,30 @@
-.additional-products__decor {
-  width: 280px;
-  margin: 0 auto;
+.additional-products__wrapper {
+  padding: 0 20px;
 }
 
-.additional-products__wrapper {
-  padding: 20px;
-  padding-top: 25px;
+.additional-products__container-title {
+  width: calc(100% + 20px);
+  background-image: linear-gradient(transparent 50%, #68b738 50%, #68b738 52%, transparent 52%, transparent 100%);
 }
 
 .additional-products__title {
-  position: relative;
+  width: 75%;
   margin: 0;
-  margin-bottom: 36px;
+  padding-bottom: 36px;
+  padding-top: 25px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
-}
-
-.additional-products__title::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 54px;
-  top: 60%;
-  right: -20px;
-  border-bottom: 2px solid #68b738;
+  background-color: #ffffff;
+  border-top: 1px solid #d9d9d9;
 }
 
 .additional-products__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
 }
 
 .additional-products__list-title {
@@ -42,6 +35,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional-products__text {
@@ -65,11 +59,12 @@
 
 .additional-products__gift-container {
   margin-top: 35px;
+  font-family: "Oswald", sans-serif;
+  line-height: 14px;
   background-image: linear-gradient(#68b738d9, #68b738d9), url("./../img/image/gift.jpg");
   background-repeat: no-repeat;
   background-size: auto 280px;
-  line-height: 14px;
-  font-family: "Oswald", sans-serif;
+  background-position-x: center;
   color: #ffffff;
   text-align: center;
 }
@@ -79,10 +74,9 @@
 }
 
 .additional-products__gift-text {
-  margin: 0;
+  width: 180px;
+  margin: 0 auto;
   padding-top: 48px;
-  padding-left: 58px;
-  padding-right: 61px;
   padding-bottom: 43px;
   font-family: "Lato", sans-serif;
   font-size: 16px;

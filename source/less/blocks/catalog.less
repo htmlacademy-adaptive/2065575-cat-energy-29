@@ -1,27 +1,107 @@
-.catalog__decor {
-  width: 320px;
-  margin: 0;
-  margin-top: 15px;
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+    gap: 60px;
+
+    @media (min-width: @Intermediate-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0 110px;
+    }
+  }
 }
 
 .catalog__title {
-  text-align: center;
-  margin-top: 27px;
+  margin: 0;
   margin-bottom: 41px;
-  line-height: 36px;
+  padding: 0 20px;
+  padding-top: 27px;
+  font-size: 36px;
+  line-height: 1;
+  color: #000000;
+  text-align: start;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: 65px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 1;
+    border: none;
+    grid-column: 1/3;
+  }
+
+  @media (min-width: @Intermediate-width) {
+    grid-column: 1/4;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/5;
+    margin-top: 74px;
+  }
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+  display: grid;
+  padding: 0 20px;
   padding-top: 20px;
   padding-bottom: 25px;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 30px;
+    border: none;
+    background-image: linear-gradient(#ffffff 17%, #f2f2f2 17%, #f2f2f2 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.card__container-text {
+  width: 100%;
+  margin: 0;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__container-images {
-  display: inherit;
+  display: grid;
   width: 140px;
+  grid-column: 1 /2;
+  grid-row: 1 / 3;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    grid-column: 1 /3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__images {
@@ -29,41 +109,151 @@
 }
 
 .card__title {
-  width: 76px;
   margin: 0;
+  padding-right: 64px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+  grid-column: 2 / 3;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 3;
+    margin: 0 auto;
+    margin-top: 22px;
+    padding: 0 65px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 12px;
+  }
 }
 
 .card__title-button {
   display: inline-block;
-  margin-top: 25px;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__products {
+    margin-top: 86px;
+    padding: 0 37px;
+    padding-top: 50px;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.card__toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  top: 15%;
+  left: 5%;
+  background-color: #d3d3d3;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.card__toggle-clon-button {
+  display: block;
+  width: 2px;
+  position: relative;
+  height: 30px;
+  bottom: 50%;
+  left: 50%;
+  background-color: #d3d3d3;
+
+  @media (min-width: @tablet-width) {
+    height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 140px;
+  display: grid;
+  width: 100%;
   margin: 0;
   margin-top: 14px;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 /3;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23.5px;
+  }
 }
 
 .card__item-dt {
-  width: 70px;
   text-align: left;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 130%;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    border-top: 1px solid #d9d9d9;
+
+    &:first-child {
+      border: none;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__item {
-  width: 70px;
   margin: 0;
   text-align: end;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    border-top: 1px solid #d9d9d9;
+
+    &:nth-child(2) {
+      border: none;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__button {
@@ -73,6 +263,17 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  grid-column: 1 / -1;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__container-title {
@@ -83,27 +284,26 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-}
 
-.card__container-text {
-  margin: 0;
-  margin-top: 8px;
-  font-size: 12px;
-  line-height: 16px;
-}
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    padding: 0 45px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 
-.card__decor {
-  width: 320px;
-  margin: 0;
-  background-color: #ebebeb;
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .card__container {
-  margin: 0 auto;
   text-align: center;
+  grid-column: 1 / 3;
 }
 
 .card__container-button {
+  width: 100%;
   margin-top: 21px;
   padding: 10px 94px;
   font-family: "Oswald", sans-serif;
@@ -111,20 +311,33 @@
   line-height: 20px;
   background-color: #f2f2f2;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 70px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 39px;
+  }
 }
 
-.card__decor-title {
-  width: 30px;
-  height: 2px;
-  margin: -17px auto;
-  background-color: #d3d3d3;
-  border: none;
+@media (max-width: @tablet-width) {
+  .card__images-tablet {
+    display: none;
+  }
 }
 
-.card__decor-title-vertical {
-  width: 2px;
-  height: 30px;
-  margin: 0 auto;
-  background-color: #d3d3d3;
-  border: none;
+@media (min-width: @tablet-width) {
+  .card__images {
+    display: none;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .card__images {
+    display: none;
+  }
+}
+

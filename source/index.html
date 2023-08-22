@@ -111,22 +111,37 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="example__list list">
-            <li class="example__item">
+          <div class="example__container-list">
+            <div class="example__container-itam">
               <P class="example__warning">5 КГ</P>
               <p class="example__warning-text">снижение веса</p>
-            </li>
-            <li class="example__item">
+            </div>
+            <div class="example__container-itam">
               <p class="example__warning">60 ДНЕЙ</p>
               <p class="example__warning-text">затрачено времени</p>
-            </li>
-          </ul>
-          <p class="example__wrapper-text-summa">Затраты на питание: 15 000 РУБ.</p>
-          <div class="example__slider-container">
-            <div class="example__slider-container-images">
-              <img src="img/png/viewport-mobile.png" width="280" height="256" alt="Картинка с котом">
             </div>
-            <img class="example__slider-images" src="img/png/cat-slider-mobile.png" width="280" height="256" alt="Картинка с котом">
+          </div>
+          <p class="example__wrapper-text-summa">Затраты на питание: <span class="example__wrapper-summa">15 000 РУБ.</span></p>
+          <div class="example__slider-container">
+            <div class="example__slider-container-images-left">
+              <img class="example__slider-images-left" src="img/png/viewport-mobile.png" width="280" height="256" alt="Картинка с котом">
+            </div>
+            <div class="example__slider-container-images">
+              <img class="example__slider-images" src="img/png/cat-slider-mobile.png" width="280" height="256" alt="Картинка с котом">
+            </div>
+            <div class="example__slider-toggle-button">
+              <button class="example__slider-button" type="button">
+                <img src="img/png/мector.png" width="24" height="18" alt="Кнопка движения слайдера">
+              </button>
+            </div>
+          </div>
+          <div class="example__slider-container-max">
+            <div class="example__slider-container-images-left">
+              <img class="example__slider-images-left" src="img/png/viewport-mobile.png" width="560" height="512" alt="Картинка с котом">
+            </div>
+            <div class="example__slider-container-images">
+              <img class="example__slider-images" src="img/png/cat-slider-mobile.png" width="560" height="512" alt="Картинка с котом">
+            </div>
             <div class="example__slider-toggle-button">
               <button class="example__slider-button" type="button">
                 <img src="img/png/мector.png" width="24" height="18" alt="Кнопка движения слайдера">
@@ -139,11 +154,14 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__container-text">
           <p class="contacts__warning">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 <span lass="contacts__warning-text-adres">Санкт-Петербург</span></p>
         </div>
         <div class="contacts__container-images">
-          <img src="img/image/location.jpg" width="320" height="362" alt="Карта">
-          <img class="contacts__container-imag" src="img/png/map-pin.png.png" width="57" height="53" alt="Точка нахождение">
+          <img class="contacts__container-imag" src="img/image/location.jpg" width="320" height="362" alt="Карта">
+          <img class="contacts__container-imag-point" src="img/png/map-pin.png.png" width="57" height="53" alt="Точка нахождение">
+          <img class="contacts__container-imag-tablet" src="img/png/map-tablet.png" width="768" height="400" alt="Карта">
+          <img class="contacts__container-imag-desktop" src="img/png/location.png" width="1440" height="400" alt="Карта">
+          <img class="contacts__container-imag-point-tablet" src="img/png/map-pin.png.png" width="113" height="106" alt="Точка нахождение">
         </div>
       </section>
     </main>
@@ -151,7 +169,6 @@
       <a class="main-footer__logo-text" href="#">
         <img src="img/png/logo.png" width="101" height="18" alt="Логотип текст.">
       </a>
-      <span class="main-footer__decor decorative-ine"></span>
       <ul class="main-footer__contacts-list list">
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
@@ -169,7 +186,6 @@
           </a>
         </li>
       </ul>
-      <span class="main-footer__decor decorative-ine"></span>
       <div class="main-footer__container-logo">
         <a class="main-footer__logo-html" href="#">
           <p class="main-footer__logo-html-text">HTML Academy</p>
