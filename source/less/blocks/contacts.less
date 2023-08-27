@@ -5,6 +5,24 @@
 .contacts__container-text {
   display: flex;
   padding: 26px 20px;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 70px;
+    gap: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    display: flex;
+    width: 407px;
+    top: 95px;
+    margin-left: 110px;
+    padding: 60px 80px;
+    gap: 80px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 }
 
 .contacts__warning {
@@ -14,6 +32,17 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+  }
 }
 
 .contacts__warning-text {
@@ -21,14 +50,86 @@
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    gap: 10px 0;
+    font-size: 16px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
 }
 
 .contacts__container-images {
-  display: flex;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 164px;
+    margin-bottom: 38px;
+  }
 }
 
-.contacts__container-imag {
+.contacts__container-imag,
+.contacts__container-imag-tablet {
+  width: 100%;
+}
+
+.contacts__container-imag-point {
   position: relative;
-  top: 135px;
-  right: 60%;
+  display: block;
+  margin: auto auto;
+  bottom: 221px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__container-imag-point-tablet {
+    position: relative;
+    display: block;
+    bottom: 64%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__container-imag-point-tablet {
+    display: block;
+    bottom: 305%;
+    margin-right: 419px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .contacts__container-imag-tablet,
+  .contacts__container-imag-desktop,
+  .contacts__container-imag-point-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__container-imag,
+  .contacts__container-imag-point,
+  .contacts__container-imag-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__container-imag-tablet {
+    display: none;
+  }
+
+  .contacts__container-imag-desktop {
+    display: block;
+    position: relative;
+    bottom: 120%;
+    z-index: 0;
+  }
 }

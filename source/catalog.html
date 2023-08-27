@@ -2,49 +2,53 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header>
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
-        </a>
-        <a class="main-header__logo" href="index.html">
-          <img src="img/png/logo.png" width="101" height="18" alt="Логотип текст.">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-button decorative-ine"></span>
-          <span class="main-nav__toggle-button decorative-ine"></span>
-          <span class="main-nav__toggle-button decorative-ine"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="main-nav">
-          <ul class="main-nav__list list">
-            <li class="main-nav__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">подбор программы</a>
-            </li>
-          </ul>
+        <div class="main-header__logo-container">
+          <a class="main-header__title" href="#">
+            <img class="main-header__logo" src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
+            <img class="main-header__logo-tablet" src="img/png/logo pic.png" width="60" height="50" alt="Логотип.">
+            <img class="main-header__logo-desktop" src="img/png/logo-dasktop.png" width="70" height="59" alt="Логотип.">
+            <img class="main-header__logo-text" src="img/png/logo.png" width="101" height="18" alt="Логотип текст.">
+            <img  class="main-header__logo-text-desktop" src="img/png/logo.png" width="118" height="21" alt="Логотип.">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--opened">
+          <button class="main-nav__toggle-button" type="button">
+            <span class="main-nav__toggle"></span>
+            <span class="main-nav__toggle-clon"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list list site-list">
+              <li class="main-nav__item">
+                <a class="main-nav__title main-nav__title-catalog" href="index.html">главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active main-nav__item--active-catalog">
+                <a class="main-nav__title main-nav__title-catalog" href="#">каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__title main-nav__title-catalog" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
-    <main class="main-catalog">
+    <main>
       <section class="catalog">
-        <span class="catalog__decor decorative-ine"></span>
-        <h1 class="catalog__title title-index">Каталог продукции</h1>
-        <span class="catalog__decor decorative-ine"></span>
+        <h1 class="catalog__title">Каталог продукции</h1>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-1.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Курица.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-1.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Курица.">
+              <img class="card__images-tablet" src="img/png/catalog-1.png" width="161" height="172" alt="Картинка продукта Кет Энерджи Курица.">
+            </a>
             <h2 class="card__title">Cat Energy PRO 500 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -54,15 +58,15 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">700 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-2-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Курица.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-2-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Курица.">
+              <img class="card__images-tablet" src="img/png/catalog-2-desktop.png" width="168" height="206" alt="Картинка продукта Кет Энерджи Курица.">
+            </a>
             <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -72,15 +76,15 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">1000 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-2.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Рыба.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-2.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Рыба.">
+              <img class="card__images-tablet" src="img/png/catalog-2.png" width="161" height="172" alt="Картинка продукта Кет Энерджи Рыба.">
+            </a>
             <h2 class="card__title">Cat Energy PRO 500 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -90,15 +94,15 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">700 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-4-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Рыба.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-4-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Рыба.">
+              <img class="card__images-tablet" src="img/png/catalog-4-desktop.png" width="168" height="206" alt="Картинка продукта Кет Энерджи Рыба.">
+            </a>
             <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -108,15 +112,16 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">1000 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-5-desktop.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Гречка.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-5-desktop.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Гречка.">
+              <img class="card__images-tablet" src="img/png/catalog-5-desktop.png" width="161" height="172" alt="Картинка продукта Кет Энерджи Гречка.">
+            </a>
+            </a>
             <h2 class="card__title">Cat Energy slim 500 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -126,15 +131,15 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">400 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-6-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Гречка.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-6-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Гречка.">
+              <img class="card__images-tablet" src="img/png/catalog-6-desktop.png" width="168" height="206" alt="Картинка продукта Кет Энерджи Гречка.">
+            </a>
             <h2 class="card__title">Cat Energy slim 1000 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -144,15 +149,15 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">700 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
         <article class="card">
-          <div class="card__container-images">
-            <img class="card__images" src="img/png/catalog-7-desktop.png" width="72" height="84" alt="Картинка продукта Кет Энерджи Рис.">
-          </div>
-          <div>
+          <div class="card__container">
+            <a class="card__container-images" href="#">
+              <img class="card__images" src="img/png/catalog-7-desktop.png" width="72" height="84" alt="Картинка продукта Кет Энерджи Рис.">
+              <img class="card__images-tablet" src="img/png/catalog-7-desktop.png" width="163" height="174" alt="Картинка продукта Кет Энерджи Рис.">
+            </a>
             <h2 class="card__title">Cat Energy slim 500 г</h2>
             <dl class="card__list">
               <dt class="card__item-dt">Масса</dt>
@@ -162,15 +167,13 @@
               <dt class="card__item-dt">Цена</dt>
               <dd class="card__item">500 ₽</dd>
             </dl>
+            <button class="card__button button" type="button">заказать</button>
           </div>
-          <button class="card__button button" type="button">заказать</button>
         </article>
-        <span class="card__decor decorative-ine"></span>
-        <article class="card">
-          <div class="card__container">
+        <article class="card__products">
+          <div class="card__products-container">
             <a class="card__title-button" href="#">
-              <span class="card__decor-title decorative-ine"></span>
-              <span class="card__decor-title-vertical decorative-ine"></span>
+              <span class="visually-hidden">Показать еще</span>
             </a>
             <h2 class="card__container-title">Показать еще 100500 товаров</h2>
             <p class="card__container-text">На самом деле вкусов гораздо больше!</p>
@@ -179,40 +182,50 @@
         </article>
       </section>
       <section class="additional-products">
-        <span class="additional-products__decor decorative-ine"></span>
         <div class="additional-products__wrapper">
-          <h2 class="additional-products__title additional-products__title-decor">Дополнительные товары</h2>
+          <h2 class="additional-products__title">Дополнительные товары</h2>
           <ul class="additional-products__list list">
-            <span class="additional-products__decor decorative-ine"></span>
             <li class="additional-products__item">
-              <h3 class="additional-products__list-title">Сахарозаменитель</h3>
-              <p class="additional-products__text">1 упаковка (100 г)</p>
-              <p class="additional-products__text">200 ₽</p>
-              <button class="additional-products__button button" type="button">заказать</button>
+              <div class="additional-products__container-item">
+                <h3 class="additional-products__list-title">Сахарозаменитель</h3>
+                <div class="additional-products__container-text">
+                  <p class="additional-products__text">1 упаковка (100 г)</p>
+                  <p class="additional-products__text-summa">200 ₽</p>
+                </div>
+                <button class="additional-products__button button" type="button">заказать</button>
+              </div>
             </li>
             <li class="additional-products__item">
-              <span class="additional-products__decor decorative-ine"></span>
-              <h3 class="additional-products__list-title">питьевая вода</h3>
-              <p class="additional-products__text">5 литров</p>
-              <p class="additional-products__text">50 ₽</p>
-              <button class="additional-products__button button" type="button">заказать</button>
+              <div class="additional-products__container-item">
+                <h3 class="additional-products__list-title">питьевая вода</h3>
+                <div class="additional-products__container-text">
+                  <p class="additional-products__text">5 литров</p>
+                  <p class="additional-products__text-summa">50 ₽</p>
+                </div>
+                <button class="additional-products__button button" type="button">заказать</button>
+              </div>
             </li>
             <li class="additional-products__item">
-              <span class="additional-products__decor decorative-ine"></span>
-              <h3 class="additional-products__list-title">молоко</h3>
-              <p class="additional-products__text">1 литр</p>
-              <p class="additional-products__text">100 ₽</p>
-              <button class="additional-products__button button" type="button">заказать</button>
+              <div class="additional-products__container-item">
+                <h3 class="additional-products__list-title">молоко</h3>
+                <div class="additional-products__container-text">
+                  <p class="additional-products__text">1 литр</p>
+                  <p class="additional-products__text-summa">100 ₽</p>
+                </div>
+                <button class="additional-products__button button" type="button">заказать</button>
+              </div>
             </li>
             <li class="additional-products__item">
-              <span class="additional-products__decor decorative-ine"></span>
-              <h3 class="additional-products__list-title">витамины</h3>
-              <p class="additional-products__text">1 упаковка (30 г)</p>
-              <p class="additional-products__text">300 ₽</p>
-              <button class="additional-products__button button" type="button">заказать</button>
+              <div class="additional-products__container-item">
+                <h3 class="additional-products__list-title">витамины</h3>
+                <div class="additional-products__container-text">
+                  <p class="additional-products__text">1 упаковка (30 г)</p>
+                  <p class="additional-products__text-summa">300 ₽</p>
+                </div>
+                <button class="additional-products__button button" type="button">заказать</button>
+              </div>
             </li>
           </ul>
-          <span class="additional-products__decor decorative-ine"></span>
           <div class="additional-products__gift-container">
             <img class="additional-products__gift-images" src="img/png/icon_gift.png" width="78" height="80" alt="Иконка подарок.">
             <p class="additional-products__gift-text">Закажите все и получите чехол для кота в подарок!</p>
@@ -223,19 +236,21 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__container-text">
           <p class="contacts__warning">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="contacts__container-images">
-          <img src="img/image/location.jpg" width="320" height="362" alt="Карта">
-          <img class="contacts__container-imag" src="img/png/map-pin.png.png" width="57" height="53" alt="Точка нахождение">
+          <img class="contacts__container-imag" src="img/image/location.jpg" width="320" height="362" alt="Карта">
+          <img class="contacts__container-imag-point" src="img/png/map-pin.png.png" width="57" height="53" alt="Точка нахождение">
+          <img class="contacts__container-imag-tablet" src="img/png/map-tablet.png" width="768" height="400" alt="Карта">
+          <img class="contacts__container-imag-desktop" src="img/png/location.png" width="1440" height="400" alt="Карта">
+          <img class="contacts__container-imag-point-tablet" src="img/png/map-pin.png.png" width="113" height="106" alt="Точка нахождение">
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo-text" href="index.html">
-        <img src="img/png/logo.png" width="101" height="18" alt="Логотип текст.">
+        <img src="img/png/logo.png" width="128" height="24" alt="Логотип текст.">
       </a>
-      <span class="main-footer__decor decorative-ine"></span>
       <ul class="main-footer__contacts-list list">
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
@@ -253,7 +268,6 @@
           </a>
         </li>
       </ul>
-      <span class="main-footer__decor decorative-ine"></span>
       <div class="main-footer__container-logo">
         <a class="main-footer__logo-html" href="index.html">
           <p class="main-footer__logo-html-text">HTML Academy</p>
@@ -261,5 +275,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
