@@ -9,15 +9,16 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <div class="main-header__logo-container">
-          <a class="main-header__title" href="#">
-            <img class="main-header__logo" src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
-            <img class="main-header__logo-tablet" src="img/png/logo pic.png" width="60" height="50" alt="Логотип.">
-            <img class="main-header__logo-desktop" src="img/png/logo-dasktop.png" width="70" height="59" alt="Логотип.">
-            <img class="main-header__logo-text" src="img/png/logo.png" width="101" height="18" alt="Логотип текст.">
-            <img  class="main-header__logo-text-desktop" src="img/png/logo.png" width="118" height="21" alt="Логотип.">
-          </a>
-        </div>
+        <a class="main-header__title" href="#">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/svg/logo-dasktop.svg">
+            <source media="(min-width: 767px)" srcset="img/svg/logo-pic.svg">
+            <img src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
+          </picture>
+          <div class="main-header__container-logo">
+              <img src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип текст.">
+          </div>
+        </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle-button" type="button">
             <span class="main-nav__toggle"></span>
@@ -45,7 +46,11 @@
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__container-images" src="img/png/index-can.png" width="280" height="270" alt="Кет энерджи.">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/svg/index-can.svg 1x, img/svg/index-can@2x.svg 2x">
+            <source media="(min-width: 767px)" srcset="img/png/index-can-tablet-1.svg 1x, img/png/index-can-tablet-1@2x.svg 2x">
+            <img class="promo__container-images" src="img/png/index-can-mobile-1.png" width="280" height="270" alt="Кет энерджи.">
+          </picture>
           <a class="promo__link-button button" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -53,7 +58,7 @@
         <ul class="cat-back__list list">
           <li class="cat-back__item">
             <div class="cat-back__images-container">
-              <img class="cat-back__images" src="img/svg/cat-slim.svg" width="36" height="50" alt="Картинка Сидит черный кот.">
+              <img class="cat-back__images" src="img/svg/vector.svg" width="36" height="50" alt="Картинка Сидит черный кот.">
             </div>
             <h2 class="cat-back__title">похудение</h2>
             <p class="cat-back__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -121,23 +126,16 @@
           </div>
           <div class="example__slider-container">
             <div class="example__slider-container-images-left">
-              <img class="example__slider-images-left" src="img/png/viewport-mobile.png" width="280" height="256" alt="Картинка с котом">
+              <picture>
+                <source media="(min-width: 767px)" srcset="img/png/viewport=tablet@1x.png 1x, img/png/viewport=tablet@2x.png 2x">
+                <img class="example__slider-images-left" src="img/png/viewport=mobile@1x.png" srcset="img/png/viewport=mobile@2x.png 2x" width="280" height="256" alt="Картинка с котом">
+              </picture>
             </div>
             <div class="example__slider-container-images">
-              <img class="example__slider-images" src="img/png/cat-slider-mobile.png" width="280" height="256" alt="Картинка с котом">
-            </div>
-            <div class="example__slider-toggle-button">
-              <button class="example__slider-button" type="button">
-                <img src="img/png/мector.png" width="24" height="18" alt="Кнопка движения слайдера">
-              </button>
-            </div>
-          </div>
-          <div class="example__slider-container-max">
-            <div class="example__slider-container-images-left">
-              <img class="example__slider-images-left" src="img/png/viewport-mobile.png" width="560" height="512" alt="Картинка с котом">
-            </div>
-            <div class="example__slider-container-images">
-              <img class="example__slider-images" src="img/png/cat-slider-mobile.png" width="560" height="512" alt="Картинка с котом">
+              <picture>
+                <source media="(min-width: 767px)" srcset="img/png/viewport=tablet-state=after@1x.png 1x, img/png/viewport=tablet-state=after@2x.png 2x">
+                <img class="example__slider-images" src="img/png/viewport=mobile-after@1x.png" srcset="img/png/viewport=mobile-after@2x.png 2x" width="280" height="256" alt="Картинка с котом">
+              </picture>
             </div>
             <div class="example__slider-toggle-button">
               <button class="example__slider-button" type="button">

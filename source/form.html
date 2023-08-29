@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header>
+    <header class="main-header">
       <div class="main-header__wrapper">
-        <div class="main-header__logo-container">
-          <a class="main-header__title" href="#">
-            <img class="main-header__logo" src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
-            <img class="main-header__logo-tablet" src="img/png/logo pic.png" width="60" height="50" alt="Логотип.">
-            <img class="main-header__logo-desktop" src="img/png/logo-dasktop.png" width="70" height="59" alt="Логотип.">
-          </a>
-          <a class="main-header__logo-title" href="#">
-            <img class="main-header__logo-text" src="img/png/logo.png" width="101" height="18" alt="Логотип текст.">
-            <img  class="main-header__logo-text-desktop" src="img/png/logo.png" width="118" height="21" alt="Логотип.">
-          </a>
-        </div>
+        <a class="main-header__title" href="index.html">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/svg/logo-dasktop.svg">
+            <source media="(min-width: 767px)" srcset="img/svg/logo-pic.svg">
+            <img src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
+          </picture>
+          <div class="main-header__container-logo">
+              <img src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип текст.">
+          </div>
+        </a>
         <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle-button" type="button">
             <span class="main-nav__toggle"></span>

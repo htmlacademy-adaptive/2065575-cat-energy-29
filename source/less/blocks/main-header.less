@@ -21,12 +21,53 @@
   }
 }
 
-.main-header__logo-container {
+.main-header__title {
   display: contents;
 
   @media (min-width: @tablet-width) {
-    display: inline;
+    display: flex;
+    align-items: center;
   }
+}
+
+.main-header__title img {
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.main-header__container-logo img {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: @desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__container-logo {
+    display: flex;
+    margin-left: 13px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 14px;
+    }
+  }
+}
+
+.main-nav__item {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,23 +96,6 @@
 
     &:hover:active {
       opacity: 0.5;
-    }
-  }
-}
-
-
-@media (min-width: @tablet-width) {
-  .main-nav__decorative {
-    position: relative;
-    height: 2px;
-    margin: 0;
-    top: 10px;
-    background-color: @basic_green;
-    border: none;
-
-    @media (min-width: @desktop-width) {
-      top: 8px;
-      background-color: @basic-white;
     }
   }
 }
@@ -241,8 +265,6 @@
 @media (max-width: @tablet-width) {
   .main-nav--closed .main-nav__item,
   .main-nav__item--active,
-  .main-header__logo-tablet,
-  .main-header__logo-desktop,
   .main-header__logo-text-desktop {
     display: none;
   }
@@ -250,7 +272,6 @@
 
 @media (min-width: @tablet-width) {
   .main-header__logo,
-  .main-nav__decorative,
   .main-nav--opened .main-nav__toggle,
   .main-nav--opened .main-nav__toggle-clon,
   .main-nav__toggle-button {
@@ -259,15 +280,12 @@
 }
 
 @media (max-width: @desktop-width) {
-  .main-header__logo-desktop,
   .main-header__logo-text-desktop {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-header__logo-tablet,
-  .main-nav__decorative,
   .main-header__logo-text,
   .main-nav--opened .main-nav__toggle,
   .main-nav--opened .main-nav__toggle-clon,
