@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="favicon.ico/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.ico/32.svg"><!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -19,7 +23,7 @@
               <img src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип текст.">
           </div>
         </a>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--closed .main-nav--nojs">
           <button class="main-nav__toggle-button" type="button">
             <span class="main-nav__toggle"></span>
             <span class="main-nav__toggle-clon"></span>
@@ -28,13 +32,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list list site-list">
               <li class="main-nav__item">
-                <a class="main-nav__title main-nav__title-catalog" href="index.html">главная</a>
+                <a class="main-nav__title" href="index.html">главная</a>
               </li>
               <li class="main-nav__item main-nav__item--active main-nav__item--active-catalog">
-                <a class="main-nav__title main-nav__title-catalog" href="#">каталог продукции</a>
+                <a class="main-nav__title" href="#">каталог продукции</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__title main-nav__title-catalog" href="form.html">подбор программы</a>
+                <a class="main-nav__title" href="form.html">подбор программы</a>
               </li>
             </ul>
           </div>
@@ -47,8 +51,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-1.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Курица.">
-              <img class="card__images-tablet" src="img/png/catalog-1.png" width="161" height="172" alt="Картинка продукта Кет Энерджи Курица.">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-desktop.png 1x, img/png/catalog-desktop@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-tablet.png 1x, img/png/catalog-tablet@2x.png 2x">
+                <img src="img/png/catalog-1.png" srcset="img/png/catalog-1@2x.png 2x"width="68" height="86" alt="Картинка продукта Кет Энерджи Курица.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy PRO 500 г</h2>
             <dl class="card__list">
@@ -65,8 +72,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-2-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Курица.">
-              <img class="card__images-tablet" src="img/png/catalog-2-desktop.png" width="168" height="206" alt="Картинка продукта Кет Энерджи Курица.">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-2-desktop-2.png 1x, img/png/catalog-2-desktop-2@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-tablet2.png 1x, img/png/catalog-tablet-2@2x.png 2x">
+                <img src="img/png/catalog-2-desktop.png" srcset="img/png/catalog-2@2x.png 2x" width="84" height="100" alt="Картинка продукта Кет Энерджи Курица.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             <dl class="card__list">
@@ -83,8 +93,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-2.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Рыба.">
-              <img class="card__images-tablet" src="img/png/catalog-2.png" width="161" height="172" alt="Картинка продукта Кет Энерджи Рыба.">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-3-desktop.png 1x, img/png/catalog-3-desktop@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-3-tablet.png 1x, img/png/catalog-3-tablet@2x.png 2x">
+                <img class="card__images" src="img/png/catalog-3.png" srcset="img/png/catalog-3@2x.png 2x" width="68" height="86" alt="Картинка продукта Кет Энерджи Рыба.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy PRO 500 г</h2>
             <dl class="card__list">
@@ -101,8 +114,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-4-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Рыба.">
-              <img class="card__images-tablet" src="img/png/catalog-4-desktop.png" width="168" height="206" alt="Картинка продукта Кет Энерджи Рыба.">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-4-desktop.png 1x, img/png/catalog-4-desktop@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-4-tablet.png 1x, img/png/catalog-4-tablet@2x.png 2x">
+                <img class="card__images" src="img/png/catalog-4.png" srcset="img/png/catalog-4@2x.png 2x" width="84" height="100" alt="Картинка продукта Кет Энерджи Рыба.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             <dl class="card__list">
@@ -119,9 +135,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-5-desktop.png" width="68" height="86" alt="Картинка продукта Кет Энерджи Гречка.">
-              <img class="card__images-tablet" src="img/png/catalog-5-desktop.png" width="161" height="172" alt="Картинка продукта Кет Энерджи Гречка.">
-            </a>
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-5-desktop.png 1x, img/png/catalog-5-desktop@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-5-tablet.png 1x, img/png/catalog-5-tablet@2x.png 2x">
+                <img class="card__images" src="img/png/catalog-5.png" srcset="img/png/catalog-5@2x.png 2x" width="68" height="86" alt="Картинка продукта Кет Энерджи Рыба.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy slim 500 г</h2>
             <dl class="card__list">
@@ -138,8 +156,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-6-desktop.png" width="84" height="100" alt="Картинка продукта Кет Энерджи Гречка.">
-              <img class="card__images-tablet" src="img/png/catalog-6-desktop.png" width="168" height="206" alt="Картинка продукта Кет Энерджи Гречка.">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-6-desktop.png 1x, img/png/catalog-6-desctop@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-6-tablet.png 1x, img/png/catalog-6-tablet@2x.png 2x">
+                <img class="card__images" src="img/png/catalog-6.png" srcset="img/png/catalog-6@2x.png 2x" width="84" height="100" alt="Картинка продукта Кет Энерджи Гречка.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy slim 1000 г</h2>
             <dl class="card__list">
@@ -156,8 +177,11 @@
         <article class="card">
           <div class="card__container">
             <a class="card__container-images" href="#">
-              <img class="card__images" src="img/png/catalog-7-desktop.png" width="72" height="84" alt="Картинка продукта Кет Энерджи Рис.">
-              <img class="card__images-tablet" src="img/png/catalog-7-desktop.png" width="163" height="174" alt="Картинка продукта Кет Энерджи Рис.">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/png/catalog-7-desktop.png 1x, img/png/catalog-7-desktop@2x.png 2x">
+                <source media="(min-width: 767px)" srcset="img/png/catalog-7-tablet.png 1x, img/png/catalog-7-tablet@2x.png 2x">
+                <img class="card__images" src="img/png/catalog-7.png" srcset="img/png/catalog-7@2x.png 2x" width="72" height="84" alt="Картинка продукта Кет Энерджи Рис.">
+              </picture>
             </a>
             <h2 class="card__title">Cat Energy slim 500 г</h2>
             <dl class="card__list">
@@ -228,7 +252,7 @@
             </li>
           </ul>
           <div class="additional-products__gift-container">
-            <img class="additional-products__gift-images" src="img/png/icon_gift.png" width="78" height="80" alt="Иконка подарок.">
+            <img class="additional-products__gift-images" src="img/svg/icon_gift.svg" width="78" height="80" alt="Иконка подарок.">
             <p class="additional-products__gift-text">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
@@ -237,42 +261,48 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__container-text">
           <p class="contacts__warning">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <address class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 <span lass="contacts__warning-text-adres">Санкт-Петербург</span></address>
         </div>
         <div class="contacts__container-images">
-          <img class="contacts__container-imag" src="img/image/location.jpg" width="320" height="362" alt="Карта">
-          <img class="contacts__container-imag-point" src="img/png/map-pin.png.png" width="57" height="53" alt="Точка нахождение">
-          <img class="contacts__container-imag-tablet" src="img/png/map-tablet.png" width="768" height="400" alt="Карта">
-          <img class="contacts__container-imag-desktop" src="img/png/location.png" width="1440" height="400" alt="Карта">
-          <img class="contacts__container-imag-point-tablet" src="img/png/map-pin.png.png" width="113" height="106" alt="Точка нахождение">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/image/location-desktop.jpg 1x, img/image/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 767px)" srcset="img/image/location-tablet.jpg 1x, img/image/location-tablet@2x.jpg 2x">
+            <img src="img/image/location.jpg" srcset="img/image/location@2x.jpg 2x" width="320" height="362" alt="Карта">
+          </picture>
+        </div>
+        <div class="contacts__container-imag-point">
+          <picture>
+            <source media="(min-width: 767px)" srcset="img/png/map1pin.png.png 1x, img/png/map1pin.png@2x.png 2x">>
+            <img src="img/png/map-pin.png.png" srcset="img/png/map-pin.png@2x.png 2x" width="57" height="53" alt="Точка нахождение">
+          </picture>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo-text" href="index.html">
-        <img src="img/png/logo.png" width="128" height="24" alt="Логотип текст.">
+        <img src="img/svg/logo-text.svg" width="128" height="24" alt="Логотип текст.">
       </a>
       <ul class="main-footer__contacts-list list">
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
-            <img src="img/png/vk.png" width="27" height="17" alt="В Контакте">
+            <img src="img/svg/vk.svg" width="27" height="17" alt="В Контакте">
           </a>
         </li>
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
-            <img src="img/png/ytube.png" width="24" height="19" alt="Ютуб">
+            <img src="img/svg/ytube.svg" width="24" height="19" alt="Ютуб">
           </a>
         </li>
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
-            <img src="img/png/telegram.png" width="20" height="17" alt="Телеграмм">
+            <img src="img/svg/telegram.svg" width="20" height="17" alt="Телеграмм">
           </a>
         </li>
       </ul>
       <div class="main-footer__container-logo">
         <a class="main-footer__logo-html" href="index.html">
           <p class="main-footer__logo-html-text">HTML Academy</p>
-          <img src="img/png/html-academy.png" width="27" height="34" alt="Логотип HTML Академии">
+          <img src="img/svg/html.svg" width="27" height="34" alt="Логотип HTML Академии">
         </a>
       </div>
     </footer>

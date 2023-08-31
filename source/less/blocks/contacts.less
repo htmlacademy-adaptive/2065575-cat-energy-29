@@ -1,5 +1,5 @@
 .contacts {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .contacts__container-text {
@@ -63,73 +63,50 @@
   }
 }
 
-.contacts__container-images {
-  height: 362px;
-
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 164px;
-    margin-bottom: 38px;
+@media (min-width: @desktop-width) {
+  .contacts__container-images {
+    position: relative;
+    bottom: 199px;
   }
 }
 
-.contacts__container-imag,
-.contacts__container-imag-tablet {
-  width: 100%;
+.contacts__container-images img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -72px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: auto;
+    margin-bottom: -271px;
+  }
 }
 
 .contacts__container-imag-point {
   position: relative;
   display: block;
-  margin: auto auto;
-  bottom: 221px;
+  margin: auto 0;
+  bottom: 165px;
 }
 
-@media (min-width: @tablet-width) {
-  .contacts__container-imag-point-tablet {
-    position: relative;
-    display: block;
-    bottom: 64%;
-    margin: 0 auto;
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .contacts__container-imag-point-tablet {
+.contacts__container-imag-point img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
     display: block;
     bottom: 305%;
     margin-right: 419px;
   }
-}
 
-@media (max-width: @tablet-width) {
-  .contacts__container-imag-tablet,
-  .contacts__container-imag-desktop,
-  .contacts__container-imag-point-tablet {
-    display: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .contacts__container-imag,
-  .contacts__container-imag-point,
-  .contacts__container-imag-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contacts__container-imag-tablet {
-    display: none;
-  }
-
-  .contacts__container-imag-desktop {
-    display: block;
-    position: relative;
-    bottom: 120%;
-    z-index: 0;
+  @media (min-width: @desktop-width) {
+    bottom: 20px;
   }
 }
