@@ -201,12 +201,22 @@
   color: #ffffff;
   text-align: center;
 
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(#68b738d9, #68b738d9,), url("../img/image/gift@2x.jpg");
+    background-size: auto 302px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     min-height: 200px;
     margin-bottom: 75px;
     background-size: auto 766px;
     background-position-y: -335px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9, #68b738d9,), url("../img/image/gift@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -214,6 +224,10 @@
     margin: 0;
     background-size: auto 348px;
     background-position-y: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9, #68b738d9,), url("../img/image/gift@2x.jpg");
+    }
   }
 }
 
