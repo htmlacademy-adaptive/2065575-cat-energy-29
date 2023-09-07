@@ -7,7 +7,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 75px;
       padding: 0 110px;
     }
   }
@@ -29,7 +29,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-top: 65px;
-    margin-bottom: 87px;
+    margin-bottom: 86px;
     padding: 0;
     font-size: 60px;
     line-height: 1;
@@ -51,6 +51,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 62px 60px;
+
+    @media (min-width: @desktop-width) {
+      padding-top: 8px;
+      gap: 73px 80px;
+    }
   }
 }
 
@@ -72,6 +77,7 @@
   @media (min-width: @desktop-width) {
     width: 245px;
     padding: 0;
+    background-image: linear-gradient(#ffffff 13.3%, #f2f2f2 13.3%, #f2f2f2 100%);
   }
 }
 
@@ -87,6 +93,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    margin: 0;
     padding: 0 38px 40px 38px;
   }
 }
@@ -102,8 +109,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 245px;
-    margin-top: 81px;
+    width: 243px;
+    margin-top: 70px;
     padding: 0;
   }
 }
@@ -112,7 +119,7 @@
   text-align: center;
 
   @media (min-width: @desktop-width) {
-    padding: 50px 37.5px 37.5px 40px;
+    padding: 38px 37.5px 37.5px 37px;
   }
 }
 
@@ -152,9 +159,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 11px 38px;
+    padding: 13px 39px;
     margin-bottom: 0;
-    margin-top: 70px;
+    margin-top: 86px;
   }
 }
 
@@ -163,17 +170,13 @@
     display: flex;
     width: 200px;
     height: 210px;
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 
     @media (min-width: @desktop-width) {
-      display: flex;
-      width: 200px;
-      height: 210px;
-      margin: auto;
-      margin-left: 42px;
-      align-items: center;
+      width: 169px;
+      margin: 0;
     }
   }
 }
@@ -202,15 +205,15 @@
     margin: 0 auto;
     margin-left: 49px;
     width: 150px;
-    margin-top: 19px;
+    margin-top: 20px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 12px;
-    padding: 0 36px;
+    margin: 0 auto;
+    margin-top: 11px;
   }
 }
 
@@ -224,7 +227,7 @@
     width: 60px;
     height: 60px;
     margin-top: 34px;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: @desktop-width) {
@@ -251,62 +254,59 @@
 
 .card__list {
   display: flex;
-  width: 140px;
   flex-wrap: wrap;
   margin-top: -56px;
-  gap: 0 30px;
   margin-left: 50%;
-  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 251px;
-    gap: 6px 15px;
+    gap: 8px 15px;
     margin-top: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 23.5px;
+    width: 169px;
+    margin: 0;
+    margin-top: 32px;
+    gap: 7px 15px;
+  }
+}
+
+.card__list-container {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    padding-bottom: 5px;
+    border-bottom: none;
   }
 }
 
 .card__item-dt {
-  text-align: left;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 100px;
-    padding-top: 5px;
     font-size: 16px;
     line-height: 20px;
-    border-top: 1px solid #d9d9d9;
-
-    &:first-child {
-      border: none;
-      padding-top: 0;
-    }
   }
 }
 
 .card__item {
-  margin: 0;
-  text-align: end;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 5px;
     font-size: 16px;
     line-height: 20px;
-    border-top: 1px solid #d9d9d9;
-
-    &:nth-child(2) {
-      border: none;
-      display: block;
-      padding-top: 0;
-      width: 100px;
-    }
   }
 }
 
@@ -320,13 +320,14 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-top: 37px;
+    margin-top: 32px;
     justify-content: center;
     padding: 10px 94px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 10px 53px;
+    margin-top: 39px;
   }
 }
 
@@ -349,6 +350,6 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-top: 12px;
+    margin-top: 47px;
   }
 }
