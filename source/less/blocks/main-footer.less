@@ -4,40 +4,51 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    padding: 57px 30px;
     justify-content: space-between;
-    padding: 55px 30px;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 60px 110px;
+    padding: 68px 110px;
+    margin-top: 72px;
+  }
+}
+
+.main-footer__logo-itam {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
   }
 }
 
 .main-footer__logo-text {
-  display: table;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-  }
+  display: block;
 }
+
 
 .main-footer__contacts-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding: 20px 0;
-  justify-content: center;
+  width: 132px;
+  gap: 28px;
+  padding: 16px 0;
+  padding-top: 23px;
+  margin: 0 auto;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    margin-left: 50px;
+    margin-left: 36px;
     padding: 0;
     border: none;
+    margin-top: 2px;
   }
 }
 

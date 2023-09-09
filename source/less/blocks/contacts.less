@@ -8,25 +8,29 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 70px;
-    gap: 250px;
+    display: inline-flex;
+    padding: 59px 70px;
+    padding-top: 61px;
+    width: 628px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    display: flex;
     width: 407px;
     top: 95px;
     margin-left: 110px;
-    padding: 60px 80px;
-    gap: 80px;
+    padding: 60px 79px;
+    gap: 24px;
     background-color: #ffffff;
     z-index: 1;
   }
 }
 
 .contacts__warning {
-  margin: 0;
+  width: 100%;
+  max-width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -34,32 +38,32 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     font-size: 20px;
     line-height: 26px;
     align-items: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 163px;
+    max-width: 236px;
   }
 }
 
 .contacts__warning-text {
-  margin: 0;
+  width: 100%;
+  max-width: 140px;
   font-family: "Lato", sans-serif;
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
-    gap: 10px 0;
+    max-width: 190px;
+    gap: 20px 0;
     font-size: 16px;
     text-align: end;
   }
 
   @media (min-width: @desktop-width) {
     text-align: start;
+    margin-left: 69px;
   }
 }
 
@@ -73,7 +77,6 @@
 .contacts__container-images img {
   display: block;
   margin: 0 auto;
-  margin-bottom: -72px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -94,19 +97,20 @@
   bottom: 165px;
 }
 
-
 .contacts__container-imag-point img {
-  position: relative;
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  left: 42%;
+  bottom: 5px;
 
-  @media (min-width: @desktop-width) {
-    display: block;
-    bottom: 305%;
-    margin-right: 419px;
+  @media (min-width: @tablet-width) {
+    width: auto;
+    height: auto;
+    left: 333px;
+    bottom: -17px;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 20px;
+    top: -32px;
+    left: 908px;
   }
 }

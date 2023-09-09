@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-    <link rel="icon" href="favicon.ico/32.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon.ico/32.svg"><!-- 180×180 -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.ico/32.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon.ico/152.png"><!-- 152×152 -->
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__title" href="index.html">
-          <picture>
-            <source media="(min-width: 1439px)" srcset="img/svg/logo-dasktop.svg">
-            <source media="(min-width: 767px)" srcset="img/svg/logo-pic.svg">
-            <img src="img/png/logo-mobile.png" width="38" height="38" alt="Логотип.">
-          </picture>
-          <div class="main-header__container-logo">
-              <img src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип текст.">
-          </div>
+        <a class="main-header__title" href="index.html" aria-label="Логотип ведушший н глвную страницу">
+          <svg class="main-header__logo-dasktop" width="70" height="59">
+            <use xlink:href="img/sprite.svg#logo-dasktop"></use>
+          </svg>
+          <svg class="main-header__logo-mobile" width="60" height="50">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="main-header__logo" width="33" height="38">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          <svg class="main-header__logo-text" width="101" height="18">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
+          </svg>
         </a>
         <nav class="main-nav main-nav--closed .main-nav--nojs">
           <button class="main-nav__toggle-button" type="button">
@@ -166,7 +170,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__container-text">
-          <p class="contacts__warning">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__warning">приглашаем<br>к сотрудничеству дилеров!</p>
           <address class="contacts__warning-text">ул. Большая Конюшенная, д. 19/8 <span lass="contacts__warning-text-adres">Санкт-Петербург</span></address>
         </div>
         <div class="contacts__container-images">
@@ -178,37 +182,52 @@
         </div>
         <div class="contacts__container-imag-point">
           <picture>
-            <source media="(min-width: 767px)" srcset="img/png/map1pin.png.png 1x, img/png/map1pin.png@2x.png 2x">>
+            <source media="(min-width: 767px)" srcset="img/png/map1pin.png.png 1x, img/png/map1pin.png@2x.png 2x">
             <img src="img/png/map-pin.png.png" srcset="img/png/map-pin.png@2x.png 2x" width="57" height="53" alt="Точка нахождение">
           </picture>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo-text" href="index.html">
-        <img src="img/svg/logo-text.svg" width="128" height="24" alt="Логотип текст.">
+      <a class="main-footer__logo-itam" href="index.html">
+        <svg class="main-footer__logo-text" width="128" height="24">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
+        <span class="visually-hidden">Логотип текст.</span>
       </a>
       <ul class="main-footer__contacts-list list">
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
-            <img src="img/svg/vk.svg" width="27" height="17" alt="В Контакте">
+            <svg width="27" height="17">
+              <use xlink:href="img/sprite.svg#vk-icons"></use>
+            </svg>
+            <span class="visually-hidden">В Контакте.</span>
           </a>
         </li>
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
-            <img src="img/svg/ytube.svg" width="24" height="19" alt="Ютуб">
+            <svg width="24" height="19">
+              <use xlink:href="img/sprite.svg#ytube"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
         <li class="main-footer__contacts-item">
           <a class="main-footer__contacts-link" href="#">
-            <img src="img/svg/telegram.svg" width="20" height="17" alt="Телеграмм">
+            <svg width="20" height="17">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм.</span>
           </a>
         </li>
       </ul>
       <div class="main-footer__container-logo">
         <a class="main-footer__logo-html" href="index.html">
           <p class="main-footer__logo-html-text">HTML Academy</p>
-          <img src="img/svg/html.svg" width="27" height="34" alt="Логотип HTML Академии">
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#html"></use>
+          </svg>
+          <span class="visually-hidden">Логотип HTML Академии.</span>
         </a>
       </div>
     </footer>
